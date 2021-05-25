@@ -21,8 +21,11 @@ c<sub>3</sub>c<sub>4</sub> XOR k<sub>1</sub>k<sub>2</sub> = 48 (H en hex.) <==> 
 Entonces:
 
 c<sub>1</sub>c<sub>2</sub> XOR 43 = c<sub>3</sub>c<sub>4</sub> XOR 48
+
 c<sub>1</sub>c<sub>2</sub> XOR 43 XOR 43 = c<sub>3</sub>c<sub>4</sub> XOR 48 XOR 48
+
 c<sub>1</sub>c<sub>2</sub> XOR 0 = c<sub>3</sub>c<sub>4</sub> XOR b
+
 c<sub>1</sub>c<sub>2</sub> = c<sub>3</sub>c<sub>4</sub> XOR b
 
 Con eso resuelto, se hace una fuerza bruta con las 10000 líneas de texto hasta encontrar dicha condición. Sin embargo, eso no garantiza que solo obtendremos un resultado. Así que usaremos la llave generada que para entonces será conocida para desencriptar las opciones de flag. Para esto solo usaré c<sub>5</sub>c<sub>6</sub> para encontrar el caracter "T" que sería el siguiente. Bien, una vez hecho esto encontraremos la línea que corresponde a la flag y la llave. Finalmente, el código fuente de esta solución podrán encontrarlo en esta carpeta como "bruteforcexor.py". Con este ya tendrás tanto la flag encriptada y su llave en hexadecimal, tu único trabajo será desencriptarla. Espero haber sido suficientemente didáctico y que te haya gustado este solucionado. Un saludo.
